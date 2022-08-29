@@ -21,6 +21,7 @@ const displayFood = (foods) => {
          </div>
         `
         foodContainer.appendChild(foodDiv);
+
     });
 }
 
@@ -54,7 +55,7 @@ const displayDetails = (foodData) => {
                <h5 class="my-3">Food Region: ${foodData.strArea}</h5>
                
                <p class="card-text">Instruction: ${foodData.strInstructions.slice(0, 700)}</p>
-               <a src="${foodData.strYoutube}" class="btn btn-danger">Youtube Link </a>
+               <a href="${foodData.strYoutube}" target="_blank" class="btn btn-danger" >Youtube Link </a>
                
            </div>
        </div>
@@ -69,6 +70,7 @@ const displayDetails = (foodData) => {
     `
 
     console.log(foodData);
+    console.log(foodData.strYoutube);
 }
 
 loadMeal('chicken');
