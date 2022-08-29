@@ -43,7 +43,7 @@ const displayDetails = (foodData) => {
     detailContainer.innerHTML = `
    <div class="modal-body">
    <div class="mb-3">
-   <div class=" row g-2">
+   <div class=" row g-4">
        <div class="col-md-4">
            <img src="${foodData.strMealThumb}" class="img-fluid rounded" alt="...">
        </div>
@@ -54,6 +54,7 @@ const displayDetails = (foodData) => {
                <h5 class="my-3">Food Region: ${foodData.strArea}</h5>
                
                <p class="card-text">Instruction: ${foodData.strInstructions.slice(0, 700)}</p>
+               <a src="${foodData.strYoutube}" class="btn btn-danger">Youtube Link </a>
                
            </div>
        </div>
