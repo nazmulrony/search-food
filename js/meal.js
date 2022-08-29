@@ -50,10 +50,10 @@ const displayDetails = (foodData) => {
        <div class="col-md-8">
            <div class="card-body">
                <h2 class="card-title">${foodData.strMeal}</h2>
-               <h5 class="">Food Category: ${foodData.strCategory}</h5>
-               <h5 class="">Food Region: ${foodData.strArea}</h5>
+               <h5 class="my-3">Food Category: ${foodData.strCategory}</h5>
+               <h5 class="my-3">Food Region: ${foodData.strArea}</h5>
                
-               <p class="card-text">Instruction: ${foodData.strInstructions.slice(0, 400)}</p>
+               <p class="card-text">Instruction: ${foodData.strInstructions.slice(0, 700)}</p>
                
            </div>
        </div>
